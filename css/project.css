@@ -3,12 +3,13 @@
 body {
 	margin: 0;
 	text-align: center;
+	font-size: 25px;
 	background-color: #EAEAEA;
 }
 
 .logo {
-	width: 180px;
-	margin: 50px 0 20px 0;
+	width: 350px;
+	margin: 70px 0 40px 0;
 }
 
 a {
@@ -19,13 +20,12 @@ a {
 .head {
 	display:flex;
 	flex-wrap:wrap;
-	width: 800px;
-	margin: 0 auto 40px auto;
+	width: 1200px;
+	margin: 0 auto 50px auto;
 }
 
 .head div {
 	margin: 0 auto;
-	width: 400px;
 }
 
 ul {
@@ -38,21 +38,21 @@ li {
 }
 
 hr {
-	width: 1000px;
-	margin-bottom: 60px;
+	width: 1200px;
+	margin-bottom: 70px;
 }
 
 video {
-	width: 800px;
+	width: 900px;
 	outline: none;
-	margin: 0 auto 60px auto;
+	margin: 0 auto 70px auto;
 }
 
 button {
 	background: none;
-	font-size: 15px;
+	font-size: 25px;
 	padding: 3px 5px;
-	margin: 0 5px 50px 5px;
+	margin: 0 5px 60px 5px;
 	border: 1px solid black;
 	border-radius: 5px;
 }
@@ -61,27 +61,27 @@ button {
 	hr {
 		width: 100%;
 	}
-}
-
-@media all and (max-width:800px) {
+	
 	.head {
 		width: 100%;
 	}
-	
+}
+
+@media all and (max-width:950px) {
 	video {
-		width: 98%;
+		width: 95%;
 	}
 }
 
-@media all and (min-width:550px) and (max-width:800px) {
+@media all and (max-width:1000px) {
 	.head div {
-		width: 50%;
+		width: 600px;
+		margin: 0 auto;
 	}
 }
 
-@media all and (max-width:550px) {
+@media all and (min-width:900px) and (max-width:1100px) {
 	.head div {
-		width: 100%;
-		margin: 0 5%;
+		margin: 0 auto;
 	}
 }
