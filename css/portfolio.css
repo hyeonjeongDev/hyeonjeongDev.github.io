@@ -12,7 +12,12 @@ body {
 	font-family: 'Courgette', cursive;
 	font-size: 100px;
 	font-weight: bold;
-	margin: 60px auto;
+	margin: 70px auto;
+}
+
+.main a {
+	text-decoration: none;
+	color: black;
 }
 
 .navbar {
@@ -22,6 +27,8 @@ body {
 	top: 0;
 	width: 100%;
 	background-color: #D5D5D5;
+	margin: 0;
+	z-index: 2;
 }
 
 .navbar>li {
@@ -37,13 +44,47 @@ body {
 }
 
 #Profile {
-	margin: 0 auto;
-	padding: 80px 0;
+	width: 100%;
+	height: 1005px;
+	position: relative;
 }
 
 #Profile img {
-	width: 400px;
-	border-radius: 50%;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+
+.caption {
+	position: absolute;
+	top:0;
+	width: 100%;
+	height: 100%;
+	background:rgba(0,0,0,0.6);
+	opacity:0;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	z-index: 1;
+}
+.Profile:hover .caption {
+	height: 1005px;
+	opacity: 1;
+	-moz-transform: translateY(0px);
+	-ms-transform: translateY(0px);
+	-o-transform: translateY(0px);
+	-webkit-transform: translateY(0px);
+	transform: translateY(0px);
+}
+
+.caption div {
+	margin: 350px 0;
+}
+
+.caption p {
+	color: #fff;
+	text-align: center;
 }
 
 button {
@@ -56,12 +97,13 @@ button {
 
 hr {
 	width: 1200px;
+	margin: 0 auto;
 }
 
 #Skills {
 	width: 800px;
 	margin: 0 auto;
-	padding: 80px 0;
+	padding: 100px 0;
 }
 
 table {
@@ -91,7 +133,7 @@ tr:last-child td:last-child {
 #Project {
 	width: 800px;
 	margin: 0 auto;
-	padding: 80px 0;
+	padding: 100px 0;
 }
 
 #Project img {
@@ -101,7 +143,7 @@ tr:last-child td:last-child {
 #Contact {
 	width: 450px;
 	margin: 0 auto;
-	padding: 80px 0;
+	padding: 100px 0;
 }
 
 #Contact #ct, #Contact #ct td {
