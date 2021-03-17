@@ -67,6 +67,7 @@ body {
 	-webkit-transition: all 0.2s ease-in-out;
 	transition: all 0.2s ease-in-out;
 	z-index: 1;
+	display: table;
 }
 
 .Profile:hover .caption {
@@ -80,7 +81,8 @@ body {
 }
 
 .caption div {
-	margin: 347px 0;
+	display: table-cell;
+	vertical-align: middle;
 }
 
 .caption p {
