@@ -88,6 +88,7 @@ body {
 .caption p {
 	color: #fff;
 	text-align: center;
+	line-height: 40px;
 }
 
 button {
